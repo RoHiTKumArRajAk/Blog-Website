@@ -32,3 +32,6 @@ router.get('/comments',authenticateToken ,getComments);
 router.delete('/comment/delete',authenticateToken ,deleteComment);
 
 export default router;
+
+
+//authenticateToken: This is presumably a middleware function. Middleware functions are used to perform tasks before or after handling the request. In this case, authenticateToken is likely used to authenticate the user making the request, ensuring that only authenticated users can create a post.
